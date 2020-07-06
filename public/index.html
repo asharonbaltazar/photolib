@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/simplex/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Photo Library</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="display-4">Photo Library</h1>
+              <h3 class="subtitle text-muted mb-3">Search PixaBay.com</h3>
+              <form id="search-form">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="search"
+                    placeholder="animals, nature, food..."
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg"
+                  />
+                  <select id="category-select" class="custom-select col-md-3 col-4">
+                    <option selected disabled>Category</option>
+                    <option>Animals</option>
+                    <option>Backgrounds</option>
+                    <option>Buildings</option>
+                    <option>Business</option>
+                    <option>Computer</option>
+                    <option>Education</option>
+                    <option>Fashion</option>
+                    <option>Feelings</option>
+                    <option>Food</option>
+                    <option>Health</option>
+                    <option>Industry</option>
+                    <option>Music</option>
+                    <option>Nature</option>
+                    <option>People</option>
+                    <option>Places</option>
+                    <option>Religion</option>
+                    <option>Science</option>
+                    <option>Sports</option>
+                    <option>Transportation</option>
+                    <option>Travel</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-5 d-flex justify-content-center" id="output-container">
+          <h1 class="text-muted">There is to show here</h1>
+        </div>
+      </div>
+      <footer class="mt-5 p-3 text-center bg-light">
+
+        <div class="footer-copyright text-center py-3">
+          <img class="h-100" src="https://pixabay.com/static/img/logo.png" alt="">
+          <a href="https://pixabay.com/">Visit pixabay</a>
+        </div>
+
+      
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+      <script src="app.js"></script>
+  </body>
+</html>

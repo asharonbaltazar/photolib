@@ -48,7 +48,7 @@ function constructDOM(data) {
 }
 
 async function photos(query, category) {
-  const data = await fetch(`/${query}&${category}`);
+  const data = await fetch(`/photo/${query}&${category}`);
 
   const response = data.json();
 

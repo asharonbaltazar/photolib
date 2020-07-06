@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const api_key = process.env.API_KEY;
 app.use(express.static(__dirname + "/public"));
 
-app.get("/:query&:category", async (request, response) => {
+app.get("/photo/:query&:category", async (request, response) => {
   let params = request.params;
   const string = `https://pixabay.com/api/?key=${api_key}&category=${params.category}&q=${params.query}`;
   let data = await fetch(string);

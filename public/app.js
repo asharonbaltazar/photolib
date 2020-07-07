@@ -44,7 +44,7 @@ function constructDOM(data) {
     `;
   });
   outputContainer.innerHTML = output;
-  const image = document.querySelectorAll("img");
+  const image = document.querySelectorAll(".rellax");
   new simpleParallax(image, {
     delay: 0.6,
     transition: "cubic-bezier(0,0,0,1)",

@@ -2,9 +2,14 @@ img {
   height: 150px;
   width: 150px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .img-circle {
   height: 10px;
   width: 10px;
+}
+
+.middle-container {
+  height: 200px;
 }

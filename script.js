@@ -16,6 +16,16 @@ app.get("/photo/:query&:category", async (request, response) => {
   response.send(responseData);
 });
 
+app.get("/id/:id", async (request, response) => {
+  let params = request.params;
+  const string = `https://pixabay.com/api/?key=${api_key}&id=${params.id}`;
+  let data = await fetch(string);
+
+  const responseData = await data.json();
+
+  response.send(responseData);
+});
+
 app.listen(port, () => {
   console.log(`Starting server at ${port}`);
 });
